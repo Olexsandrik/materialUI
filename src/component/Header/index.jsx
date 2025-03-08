@@ -21,6 +21,14 @@ export const Header = () => {
   console.log(user);
   return (
     <>
+      {/* <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          marginTop
+        }}
+      ></div> */}
       <Box
         sx={{
           display: "flex",
@@ -49,32 +57,60 @@ export const Header = () => {
 
       <div
         style={{
-          textAlign: "center",
-          margin: "10px",
-          position: "relative",
+          justifyContent: "space-between",
+          alignItems: "center",
+          display: "flex",
+          marginTop: "5px",
         }}
       >
-        <img
-          src={Profile}
-          alt="Profile"
-          style={{ borderRadius: "50%", width: "100px", height: "100px" }}
-        />
-
-        <Loupe
-          sx={{
-            position: "absolute",
-            bottom: "30px",
-            right: "0px",
-            color: "#fff",
-            backgroundColor: "rgba(0,0,0,0.6)",
-            borderRadius: "50%",
-            padding: "5px",
+        <div
+          style={{
+            textAlign: "center",
+            margin: "10px",
+            position: "relative",
           }}
-        />
+        >
+          <img
+            src={Profile}
+            alt="Profile"
+            style={{
+              borderRadius: "50%",
+              width: "100px",
+              height: "100px",
+            }}
+          />
+          <Loupe
+            sx={{
+              position: "absolute",
+              bottom: "30px",
+              right: "0px",
+              color: "#fff",
+              backgroundColor: "rgba(0,0,0,0.6)",
+              borderRadius: "50%",
+              padding: "5px",
+            }}
+          />
+          <Typography fontWeight="bold">Your Profile</Typography>
+        </div>
+        {user?.map((item) => {
+          return (
+            <div key={item.id} style={{ textAlign: "center", margin: "10px" }}>
+              <img
+                src={item.avatar}
+                alt={item.name}
+                style={{
+                  borderRadius: "50%",
+                  border: "3px solid red",
+                  width: "100px",
+                  height: "100px",
+                }}
+              />
+
+              <Typography fontWeight="bold">{item.name}</Typography>
+            </div>
+          );
+        })}
       </div>
-      <Typography variant="h2" sx={{ fontFamily: "monospace" }}>
-        Instagram
-      </Typography>
     </>
   );
 };
