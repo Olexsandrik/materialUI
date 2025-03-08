@@ -7,18 +7,24 @@ import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 import Loupe from "@mui/icons-material/Loupe";
 
 import Profile from "../../assets/Profile.png";
+import { getUser } from "../../utils/getUser";
 export const Header = () => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios
-      .get("./../public/api/users.json")
-      .then((res) => {
-        setUser(res.data);
-      })
-      .catch((e) => console.log("Error:", e));
+    (async () => {
+      try {
+        const res = await getUser();
+        setUser(res);
+      } catch (err) {
+      } finally {
+        setLoading(false);
+      }
+    })();
   }, []);
-  console.log(user);
+
   return (
     <>
       {/* <div
