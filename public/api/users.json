@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "username": "ivan_petrenko",
+    "name": "Іван Петренко",
+    "avatar": "https://i.pravatar.cc/150?img=10",
+    "bio": "Люблю подорожі та фотографію.",
+    "location": "Львів, Україна",
+    "followers": 120,
+    "following": 80,
+    "posts": 15
+  },
+  {
+    "id": 2,
+    "username": "oksana_kovalenko",
+    "name": "Оксана Коваленко",
+    "avatar": "https://i.pravatar.cc/150?img=20",
+    "bio": "Пишу про книги та літературу.",
+    "location": "Київ, Україна",
+    "followers": 250,
+    "following": 180,
+    "posts": 35
+  },
+  {
+    "id": 3,
+    "username": "andrii_zakharov",
+    "name": "Андрій Захаров",
+    "avatar": "https://i.pravatar.cc/150?img=30",
+    "bio": "Веб-розробник, фанат технологій.",
+    "location": "Івано-Франківськ, Україна",
+    "followers": 400,
+    "following": 300,
+    "posts": 60
+  },
+  {
+    "id": 4,
+    "username": "maria_vasylenko",
+    "name": "Марія Василенко",
+    "avatar": "https://i.pravatar.cc/150?img=40",
+    "bio": "Люблю готувати та ділитися рецептами.",
+    "location": "Одеса, Україна",
+    "followers": 180,
+    "following": 95,
+    "posts": 25
+  },
+  {
+    "id": 5,
+    "username": "taras_levchenko",
+    "name": "Тарас Левченко",
+    "avatar": "https://i.pravatar.cc/150?img=50",
+    "bio": "Захоплююсь спортом та здоровим способом життя.",
+    "location": "Харків, Україна",
+    "followers": 300,
+    "following": 250,
+    "posts": 45
+  },
+  {
+    "id": 6,
+    "username": "natalia_boyko",
+    "name": "Наталія Бойко",
+    "avatar": "https://i.pravatar.cc/150?img=60",
+    "bio": "Фанатка музики та концертів.",
+    "location": "Рівне, Україна",
+    "followers": 210,
+    "following": 160,
+    "posts": 18
+  },
+  {
+    "id": 7,
+    "username": "oleksandr_krivets",
+    "name": "Олександр Кривець",
+    "avatar": "https://i.pravatar.cc/150?img=70",
+    "bio": "Люблю спорт та пригоди.",
+    "location": "Тернопіль, Україна",
+    "followers": 290,
+    "following": 220,
+    "posts": 33
+  },
+  {
+    "id": 8,
+    "username": "victoria_lisova",
+    "name": "Вікторія Лісова",
+    "avatar": "https://i.pravatar.cc/150?img=80",
+    "bio": "Обожнюю читати книги.",
+    "location": "Житомир, Україна",
+    "followers": 140,
+    "following": 85,
+    "posts": 27
+  },
+  {
+    "id": 9,
+    "username": "roman_skiba",
+    "name": "Роман Скіба",
+    "avatar": "https://i.pravatar.cc/150?img=90",
+    "bio": "Розробник додатків, цікавлюся дизайном.",
+    "location": "Чернігів, Україна",
+    "followers": 310,
+    "following": 210,
+    "posts": 55
+  },
+  {
+    "id": 10,
+    "username": "inna_horishna",
+    "name": "Інна Горішна",
+    "avatar": "https://i.pravatar.cc/150?img=100",
+    "bio": "Фотограф, люблю створювати красу.",
+    "location": "Черкаси, Україна",
+    "followers": 260,
+    "following": 190,
+    "posts": 40
+  }
+]

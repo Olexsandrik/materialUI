@@ -1,11 +1,25 @@
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import axios from "axios";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [user, setUser] = useState(null);
 
-  return <></>;
+  useEffect(() => {
+    axios
+      .get("./../public/api/users.json")
+      .then((res) => {
+        setUser(res.data);
+      })
+      .catch((e) => console.log("Error:", e));
+  }, []);
+
+  console.log(user);
+  return (
+    <div>
+      <h1>hi</h1>
+    </div>
+  );
 }
 
 export default App;
