@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Body = () => {
+export const BodyCom = () => {
   return (
     <div>Body</div>
   )
